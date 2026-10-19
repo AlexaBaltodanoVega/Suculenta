@@ -1,0 +1,112 @@
+body {
+    background-color: #fefae0;
+    font-family: serif;
+    color: #3f4a22;
+}
+
+header {
+    background-color: #3f4a22;
+    width: 100%;
+}
+
+footer {
+    background-color: #3f4a22;
+    color: #e9edc9;
+    width: 100%;
+    text-align: center;
+    border-top: 4px solid #dda15e;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: serif;
+    font-weight: bold;
+}
+
+.navbar-vivero {
+    background-color: #3f4a22;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #e9edc9;
+}
+
+.navbar-brand:hover {
+    color: #dda15e;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #e9edc9;
+    font-size: 18px;
+    padding: 5px 12px;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: #606c38;
+    color: white;
+}
+
+.encabezado-vivero {
+    background-color: #606c38;
+    color: white;
+    border-bottom: 4px solid #dda15e;
+}
+
+.footer-vivero {
+    background-color: #3f4a22;
+    color: #e9edc9;
+}
+
+.btn-vivero {
+    background-color: #bc6c25;
+    border-color: #bc6c25;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-vivero:hover {
+    background-color: #3f4a22;
+    border-color: #3f4a22;
+    color: white;
+}
+
+.card {
+    border-color: #a3b18a;
+    border-radius: 12px;
+}
+
+.card-header {
+    background-color: #e9edc9;
+    color: #3f4a22;
+    border-bottom: 2px solid #a3b18a;
+}
+
+.tarjeta-suculenta:hover {
+    box-shadow: 0 8px 18px #a3b18a;
+}
+
+.tarjeta-suculenta img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.tarjeta-suculenta .card-title {
+    color: #606c38;
+}
+
+.total-vivero {
+    background-color: #606c38;
+    color: white;
+    border: none;
+}
+
+.bg-light {
+    background-color: #e9edc9 !important;
+}
+
