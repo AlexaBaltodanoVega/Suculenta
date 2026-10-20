@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -33,7 +34,19 @@ public class SuculentaController {
         return "suculenta/listado";
     }
 
-    
+    @GetMapping("/modificar/{idSuculenta}")
+    public String modificar(@PathVariable("idSuculenta") Integer idSuculenta, Model model,
+            RedirectAttributes redirectAttributes) {
+        var suculentaOpt = suculentaService.getSuculenta(idSuculenta);
+        if (suculentaOpt.isEmpty()) {
+            redirectAttributes.addFlashAttribute("error",
+                    messageSource.getMessage("suculenta.error01", null, Locale.getDefault()));
+            return "redirect:/suculenta/listado";
+        }
+        model.addAttribute("suculenta", suculentaOpt.get());
+        return "suculenta/modifica";
+    }
+
     @PostMapping("/guardar")
     public String guardar(@Valid Suculenta suculenta, BindingResult bindingResult,
             RedirectAttributes redirectAttributes) {

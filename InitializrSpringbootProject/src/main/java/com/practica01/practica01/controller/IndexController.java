@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+@Controller
 public class IndexController {
     
     // Las últimas versiones de Spring, recomiendan utilziar final y contructor en lugar de @autowired
