@@ -110,3 +110,18 @@ h1, h2, h3, h4, h5 {
     background-color: #e9edc9 !important;
 }
 
+.pestana-familia {
+    color: #3f4a22;
+    border: 1px solid #a3b18a;
+    margin: 0 5px 5px 0;
+}
+
+.pestana-familia:hover {
+    background-color: #e9edc9;
+    color: #3f4a22;
+}
+
+.nav-pills .pestana-familia.active {
+    background-color: #606c38;
+    color: white;
+}

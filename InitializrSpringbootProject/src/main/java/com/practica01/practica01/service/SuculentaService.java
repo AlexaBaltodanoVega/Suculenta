@@ -23,11 +23,22 @@ public class SuculentaService {
         return suculentaRepository.findAllByOrderByNombreComunAsc();
     }
 
+      @Transactional(readOnly = true)
+    public List<String> getFamilias() {
+        return suculentaRepository.findFamilias();
+    }
+    
+     @Transactional(readOnly = true)
+    public List<Suculenta> getSuculentasPorFamilia(String familia) {
+        return suculentaRepository.findByFamiliaOrderByNombreComunAsc(familia);
+    }
+    
     @Transactional(readOnly = true)
     public Optional<Suculenta> getSuculenta(Integer idSuculenta) {
         return suculentaRepository.findById(idSuculenta);
     }
-
+ 
+    
     @Transactional
     public void save(Suculenta suculenta) {
         suculentaRepository.save(suculenta);
