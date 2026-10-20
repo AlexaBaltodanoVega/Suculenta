@@ -1,5 +1,6 @@
 # Suculenta
-Estudiante: TU NOMBRE COMPLETO Curso: SC-403
+Estudiante: Alexa Baltodano Vega
+Curso: SC-403
 
 Aplicación web CRUD en Spring Boot para administrar un catálogo de suculentas.
 
